@@ -1,0 +1,14 @@
+$servico = Get-Service -Name "ByteBank Interface Service" -ComputerName "SRV01"
+$servico.Status
+Running
+if ($servico.Status -eq "Running") {
+>> $servico.Stop()
+>> $servico.Start()
+>> } else {
+>> echo "Serviço não estava executando! 
+>> }"
+---------------------------------------------------------------------------------------------------------
+$servico = Get-Service AudioSRV
+$servico.Stop()
+$servico.Start()
+---------------------------------------------------------------------------------------------------------
