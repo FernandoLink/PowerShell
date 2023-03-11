@@ -18,6 +18,14 @@
             "script": "${workspaceFolder}/CalculaHashEmDiretorio.ps1",
             "args": ["-diretorio C:/Users/Usuário/workspace/PowerShell"],
             "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "PowerShell Test-Pipeline",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}/Test-Pipeline.ps1",
+            "args": [],
+            "cwd": "${workspaceFolder}"
         }
     ]
 }
